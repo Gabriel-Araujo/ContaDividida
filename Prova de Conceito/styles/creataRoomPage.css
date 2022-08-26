@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #005A9B;
+}
+
+
+h1 {
+    font-size: 4vh;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: "header" "body";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "title" "line";
+}
+
+header h1 {
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+}
+
+.line {
+    grid-area: line;
+    background-color: white;
+    height: 0.1vh;
+    width: 90%;
+    justify-self: center;
+}
+
+main {
+    grid-area: body;
+    align-self: center;
+    justify-self: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 7fr 1fr;
+    grid-gap: 1vh;
+    height: 90vh;
+}
+
+.field {
+    height: 5vh;
+    width: 70vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.field input {
+    padding-left: 0.8rem;
+    height: 5vh;
+    width: 70vw;
+    background: #005A9B;
+    outline: none;
+    border: none;
+    border-bottom: 0.1vh solid white;
+    transition: all .5s;
+    font-size: 2vh;
+    color: white;
+}
+
+.field input:focus {
+    border: 0.1vh solid white;
+    border-radius: 10px;
+}
+
+.field label {
+    position: fixed;
+    align-self: center;
+    color: white;
+    font-size: 2vh;
+    transition: all .5s;
+}
+
+.field input:focus + label, .filled {
+    opacity: 0;
+}
+
+.field button {
+    width: 70vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 900px) {
+    .field input {
+        width: 20vw;
+    }
+
+    .field button {
+        width: 20vw;
+    }
+}
