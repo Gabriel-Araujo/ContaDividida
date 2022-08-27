@@ -94,6 +94,7 @@ footer h2 {
     justify-items: center;
     align-items: center;
     border-bottom: 0.2vh solid black;
+    cursor: pointer;
 }
 
 .sideMenu {
