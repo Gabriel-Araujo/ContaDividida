@@ -116,7 +116,7 @@ main {
     grid-gap: 1vh;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
     .container {
         grid-template-rows: 10vh 10vh 80vh;
         grid-template-areas: "header" "info" "body";
