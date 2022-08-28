@@ -98,95 +98,13 @@ footer h2 {
     cursor: pointer;
 }
 
-.sideMenu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    background: #005A9B;
-    z-index: 4;
-
-    display: grid;
-    grid-gap: 2vh;
-    grid-template-rows: repeat(auto-fit, 5vh);
-    justify-content: center;
-    align-content: center;
-
-
-    border-right: 0.15vw solid black;
-    box-shadow: 0 3px 5px 100vw rgba(0, 0, 0, 0.3);
-
-    transition: all 0.5s;
-}
-
-.sideMenu header {
-    position: fixed;
-    top: 2vh;
-    left: 2vw;
-}
-
-.field{
-    font-size: 3vh;
-    font-weight: bold;
-    color: white;
-    z-index: 5;
-}
-
-.backButton {
-    cursor: pointer;
-}
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.usersMenu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-
-    z-index: 4;
-    background-color: white;
-
-    display: grid;
-    grid-template-rows: 10vh 90vh;
-    grid-template-areas: "userMenuHeader" "userMenuBody";
-
-    border-left: 0.15vw solid black;
-    box-shadow: 0 3px 5px 100vw rgba(0, 0, 0, 0.3);
-
-    transition: all 0.5s;
-}
-
-
-.usersMenu header {
-    grid-area: userMenuHeader;
-    display: flex;
-    justify-content: space-between;
-}
-
-#user-list {
-    grid-area: userMenuBody;
-}
-
-#user-list .listHeader {
-
-    grid-template-columns: repeat(2, minmax(50px, 100vw));
-}
-
-#user-list .listElement {
-    grid-template-columns: repeat(2, minmax(50px, 100vw));
-}
 
 @media screen and (min-width: 900px) {
 
     #menu-button {
         padding-left: 3vw;
     }
+
     .listHeader {
         grid-template-columns: repeat(3, minmax(50px, 20vw));
     }
@@ -197,25 +115,5 @@ footer h2 {
 
     header img {
         max-width: 3vw;
-    }
-
-    .sideMenu {
-        width: 30vw;
-    }
-
-    .usersMenu {
-        width: 30vw;
-    }
-
-    .l {
-        left: -30vw;
-    }
-
-    .r {
-        right: -30vw;
-    }
-
-    .hidden {
-        opacity: 0;
     }
 }
