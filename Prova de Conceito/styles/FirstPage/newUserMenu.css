@@ -1,0 +1,64 @@
+.menu {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 10vh));
+    align-content: space-between;
+
+    transition: all .5s;
+}
+
+.menu header {
+    grid-area: unset;
+}
+
+#new-user-name {
+    position: relative;
+    bottom: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-user-name label {
+    z-index: 6;
+    position: absolute;
+    justify-self: center;
+    transition: all .5s;
+}
+
+#new-user-name-input {
+    width: 90vw;
+    height: 5vh;
+    padding-left: 0.8rem;
+
+    transition: all .5s;
+
+    border: none;
+    outline: none;
+    border-bottom: 0.1vh solid black;
+
+    font-size: 2vh;
+}
+
+#new-user-name-input:focus {
+    border: 0.1vh solid black;
+    border-radius: 10px;
+}
+
+#new-user-name-input:focus + label, .filled {
+    opacity: 0;
+}
+
+
+.menu button {
+    justify-self: center;
+    width: 70vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: bold;
+}

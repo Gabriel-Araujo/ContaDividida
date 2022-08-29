@@ -24,6 +24,9 @@
     position: fixed;
     top: 2vh;
     left: 2vw;
+    box-shadow: none;
+    width: 10vw;
+    height: 10vh;
 }
 
 .field{
@@ -31,6 +34,15 @@
     font-weight: bold;
     color: white;
     z-index: 5;
+    cursor: pointer;
+    border-radius: 5px;
+
+    transition: all .5s;
+}
+
+.field:hover {
+    background-color: #014a7f;
+    background-color: rgba(1, 74, 127, 80%);
 }
 
 .backButton {
@@ -67,6 +79,7 @@
     grid-area: userMenuHeader;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.3);
 }
 
 #user-list {

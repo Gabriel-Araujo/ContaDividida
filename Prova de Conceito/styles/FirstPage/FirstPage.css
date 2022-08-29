@@ -3,11 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-p {
     font-family: 'Open Sans', sans-serif;
 }
+
+body {
+    min-width: 400px;
+    min-height: 800px;
+}
+
 
 .container {
     display: grid;
@@ -20,12 +23,18 @@ header {
     background-color: #005A9B;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.3);
+    z-index: 1;
 }
 
 #menu-button {
     padding-left: 5vw;
     align-self: center;
     cursor: pointer;
+}
+
+header img {
+    max-width: 70px;
 }
 
 header h2 {
@@ -114,6 +123,6 @@ footer h2 {
     }
 
     header img {
-        max-width: 3vw;
+        max-width: 80px;
     }
 }

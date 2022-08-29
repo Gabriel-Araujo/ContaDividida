@@ -1,0 +1,82 @@
+#new-product-menu {
+    height: 100vh;
+    align-content: normal;
+    grid-gap: 2vh;
+}
+
+
+.menuInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.menuInput input {
+    width: 90vw;
+    height: 5vh;
+    padding-left: 0.8rem;
+
+    transition: all .5s;
+
+    border: none;
+    outline: none;
+    border-bottom: 0.1vh solid black;
+
+    font-size: 2vh;
+}
+
+.menuInput label {
+    z-index: 6;
+    position: absolute;
+    justify-self: center;
+    transition: all .5s;
+}
+
+.menuInput input:focus {
+    border: 0.1vh solid black;
+    border-radius: 10px;
+}
+
+.menuInput input:focus + label, .filled {
+    opacity: 0;
+}
+
+#participants-field {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, max-content));
+    grid-auto-rows: minmax(50px, max-content);
+    height: 30vh;
+    z-index: 1;
+    background: white;
+    transition: all .5s;
+    align-items: unset;
+    justify-content: unset;
+    overflow-y: scroll;
+}
+
+.participantUser {
+    border-bottom: 0.1vh solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.participantUser label {
+    position: unset;
+    align-self: center;
+}
+
+.participantUser input {
+    height: unset;
+    width: unset;
+    padding-left: unset;
+    border: unset;
+    outline: unset;
+    border-bottom: unset;
+    font-size: unset;
+}
+
+#add-button {
+    position: fixed;
+    bottom: 10vh;
+}

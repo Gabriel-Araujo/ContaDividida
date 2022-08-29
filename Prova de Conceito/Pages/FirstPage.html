@@ -5,6 +5,8 @@
     <title>Conta Dividida</title>
   <link rel="stylesheet" href="../styles/FirstPage/FirstPage.css">
   <link rel = "stylesheet" href = "../styles/FirstPage/sideMenus.css">
+  <link rel = "stylesheet" href = "../styles/FirstPage/newUserMenu.css">
+  <link rel = "stylesheet" href = "../styles/FirstPage/newProductMenu.css">
 </head>
 
 <body>
@@ -65,6 +67,74 @@
     </div>
   </div>
 </div>
+
+<div class="menu hidden" id="new-user-menu">
+  <header>
+    <img src="../BackButton.svg" alt="menu icon" class="backButton">
+  </header>
+    <div class= "menuInput" id="new-user-name">
+      <input type = "text" name = "username" id = "new-user-name-input">
+      <label for = "new-user-name-input">Nome do Usuário</label>
+    </div>
+    <button>Adicionar</button>
+</div>
+
+<div class="menu" id="new-product-menu">
+  <header>
+    <img src="../BackButton.svg" alt="menu icon" class="backButton">
+  </header>
+
+  <div class= "menuInput" id="product-name-field">
+    <input type = "text" id = "new-product-name-input">
+    <label for = "new-product-name-input">Nome Do Produto</label>
+  </div>
+
+  <div class="menuInput" id="product-price-field">
+    <input type = "number" step="0.01" id = "#new-product-price-input">
+    <label for = "#new-product-price-input">Preço Do Produto</label>
+  </div>
+
+  <div class="menuInput" id="product-qnt-field">
+    <input type = "number" id = "new-product-qnt-input">
+    <label for = "new-product-qnt-input">Quantidade</label>
+  </div>
+
+  <button id="show-button">Participantes</button>
+
+  <div class="menuInput hidden" id="participants-field">
+      <div class="participantUser">
+        <label for = "user-{username0}">{ username 0 }</label>
+        <input type = "checkbox" id = "user-{username0}">
+      </div>
+      <div class="participantUser">
+        <label for = "user-{username1}">{ username 1 }</label>
+        <input type = "checkbox" id = "user-{username1}">
+      </div>
+      <div class="participantUser">
+        <label for = "user-{username2}">{ username 2 }</label>
+        <input type = "checkbox" id = "user-{username2}">
+      </div>
+
+    <div class="participantUser">
+      <label for = "user-{username3}">{ username 3 }</label>
+      <input type = "checkbox" id = "user-{username3}">
+    </div>
+
+    <div class="participantUser">
+      <label for = "user-{username4}">{ username 4 }</label>
+      <input type = "checkbox" id = "user-{username4}">
+    </div>
+
+    <div class="participantUser">
+      <label for = "user-{username5}">{ username 5 }</label>
+      <input type = "checkbox" id = "user-{username5}">
+    </div>
+  </div>
+
+  <button id="add-button">Adicionar</button>
+</div>
+
+
 
 <script src="../scripts/FirstPage.js"></script>
 </body>
