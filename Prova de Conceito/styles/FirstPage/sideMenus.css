@@ -65,7 +65,7 @@
     background-color: white;
 
     display: grid;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 7vh 93vh;
     grid-template-areas: "userMenuHeader" "userMenuBody";
 
     border-left: 0.15vw solid black;

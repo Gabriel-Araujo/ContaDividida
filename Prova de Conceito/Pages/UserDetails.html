@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang = "br">
+<html lang="br">
 <head>
-	<meta charset = "UTF-8">
+	<meta charset="UTF-8">
 	<title>Detalhamento do Usuário - { Username }</title>
+	<link rel="stylesheet" href="../styles/ProductDetails.css">
+	<link rel = "stylesheet" href = "../styles/UserDetails.css">
 </head>
 <body>
+<div class="container">
+	<header>
+		<div class="topMenu">
+			<a href = "./FirstPage.html"><img src = "../BackButton.svg" alt = "back button"></a>
+			<h2>{ User Name }</h2>
+		</div>
+	</header>
+	<main>
+		<h1 class="userListTitle">Produtos</h1>
+		<div class="userListHeader">
+			<h2 class="userName">Nome</h2>
+			<h2 class="userShare">Quantidade</h2>
+			<h2 class="userTotal">Total</h2>
+		</div>
+		<div class="userListBody">
+			<div class="user">
+				<h3 class="userName">Nome</h3>
+				<h3 class="userShare">XX</h3>
+				<h3 class="userTotal">R$ YY</h3>
+			</div>
+		</div>
+	</main>
 
+	<footer id="user-info" class="info">
+		<h2>Total: R$ XX</h2>
+	</footer>
+</div>
+
+<script src = "../scripts/ProductDetails.js"></script>
 </body>
 </html>

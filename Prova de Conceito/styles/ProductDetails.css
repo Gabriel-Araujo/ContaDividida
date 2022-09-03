@@ -14,11 +14,11 @@
     grid-template-rows: 10fr 90fr;
     grid-template-areas: "header" "body";
     grid-gap: 1vh;
+    min-height: 800px;
 }
 
 header {
     z-index: 3;
-    padding-top: 1vh;
     grid-area: header;
     display: grid;
     grid-template-rows: 50fr 50fr;
@@ -29,9 +29,10 @@ header {
 .topMenu {
     width: 90vw;
     border-bottom: 0.1vh solid white;
-    justify-self: center;
     display: flex;
+    justify-self: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .topMenu h2 {
@@ -55,6 +56,7 @@ main {
     display: grid;
     grid-template-rows: 5vh 5vh 70vh;
     grid-gap: 1vh;
+    height: 80vh;
 }
 
 .userListTitle {
@@ -118,7 +120,7 @@ main {
 
 @media screen and (min-width: 1200px) {
     .container {
-        grid-template-rows: 10vh 10vh 80vh;
+        grid-template-rows: 7vh 7vh 84vh;
         grid-template-areas: "header" "info" "body";
     }
     header {

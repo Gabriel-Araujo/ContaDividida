@@ -15,7 +15,7 @@ body {
 .container {
     display: grid;
     grid-template-areas: "header" "body" "footer";
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 7vh 86vh 7vh;
 }
 
 header {
@@ -46,7 +46,6 @@ header h2 {
 
 main {
     grid-area: body;
-    height: 80vh;
 }
 
 footer {
@@ -72,7 +71,7 @@ footer h2 {
 .list {
     display: grid;
     grid-template-rows: 1fr 9fr;
-    height: 90vh;
+    height: 82vh;
 }
 
 .listHeader {
